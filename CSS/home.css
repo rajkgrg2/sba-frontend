@@ -1,61 +1,213 @@
-body {
+
+body {margin:0;
+    font-family:Verdana, Arial, sans-serif;
     background-color: green;
-    /* background-image: url("../Images/Baltimore.jpg"); */
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
+    color: white;
 }
-h1 {
-    font-family: 'CustomFont', Arial, sans-serif;
-    font-weight:normal;
-    font-style:normal;
+#wrapper { background-color:grey;
+        color:red;
+        width:100%;
+        min-width:900px;
+    height: 100%;
+    min-height: 1000px;
+} 
+
+
+li{
+     list-style-type:none;
+      float:left;
+}
+
+h1  { background-color: green;
+      color: orange;
+     text-align: center;
+      
+}
+h2   { background-color: green;
+    color: orange;
+    text-align: left;
+    }
+    h2 { text-align: centre;
     }
 
+
+
+tr td {	color:orange;
+       font-weight:regular;
+        font-size: 100%;
+}
+#myform { border: 1px solid #000000;
+         padding: 10px;
+         margin: 10px;
+         min-width: 500px;
+         }
+
+         
+dl {
+       margin-bottom:50px;
+}
+
+
+dl dt {	color:orange;
+       font-weight:bold;
+        font-size: 100%;
+}
+
+dl dd {	margin:4px 0;
+       padding:3px 0; 
+   color: black;
+   font-size: 100%;
+}
+
+ 
+ul li   {	margin:3px 0;
+       padding:3px 0; 
+   color: black;
+   font-size: 100%;
+}
+ol li   {	margin:0px 0;
+       padding:0px 0; 
+   color: indigo;
+   font-size: 100%;
+}
+
+
+
+
+#leftcolumn { float:left;
+         width:170px;
+} 
+#rightcolumn { margin-left:170px;
+              background-color:green;
+              color:orange;
+               height: 100%;
+               min-height: 1000px;
+} 
+
+#logo { background-color:green;
+      color: white; 
+      font-size:x-large;
+      border-bottom: 1px solid orange;
+      padding:10px;
+
+}
+blockquote, q {
+   quotes: none;
+   font-size: 16px;
+}
+
+
+em, strong {
+   font-style: italic;
+   color:  #C0C0C0;
+   text-align: centre;
+}
+.content { padding:20px 20px 0 20px;
+          color: white;
+}
+#floatright {margin:10px;
+            float:right;
+}
+
+#image1 {position: relative;
+          float: right;
+          }
+#image2 {position: relative;
+          float: right;
+          }
+#image3 {position: relative;
+          float: right;
+          } 
+#image4 {position: relative;
+          float: right;
+          }
+#image {position: relative;
+          float: right;
+          }
+#image5 {position: relative;
+          float: right;
+          }
+
+   
+div#leftcolumn a { text-decoration:none;
+}  
+
+#button a { border: 4px inset #CCCCCC;
+       padding: 7px 18px;
+       background-color:  #FFFFFF;
+       background-color: #5E5A80;
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 1.2em;
+       font-weight: bold;
+       text-align: center;
+       text-decoration: none;
+       display: block;
+   margin-right: 2px;
+   
+}
+
+
+#button a:link { color: #FFFFFF; 
+}
+#button a:visited { color: #CCCCCC; 
+}
+#button a:focus { background-color:#000000;
+                 color: #DDA0DD; 
+                 border:2px outset #000000;
+}
+#button a:hover { color: #66CCFF; 
+                 border:2px outset #cccccc;
+} 
+#button a:active { color: #DDA0DD; 
+                  border:2px outset #000000;
+}
+  
+
+p{	color: #FFF8C6;
+   font-size: 18px;
+   font-family: monospace;
+
+}
+
+
 .dropbtn {
-    background-color: #04AA6D;
+    background-color: #3498DB;
     color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
-    
   }
   
-  .dropdown {
+  .dropup {
     position: relative;
     display: inline-block;
   }
   
-  .dropdown-content {
+  .dropup-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    bottom: 50px;
     z-index: 1;
   }
   
-  .dropdown-content a {
+  .dropup-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
   
-  .dropdown-content a:hover {background-color: #ddd;}
+  .dropup-content a:hover {background-color: #ccc}
   
-  .dropdown:hover .dropdown-content {display: block;}
+  .dropup:hover .dropup-content {
+    display: block;
+  }
   
-  .dropdown:hover .dropbtn {background-color: #3e8e41;
-}
-
-section {
-  display: -webkit-flex;
-  display: flex;
-}
-
+  .dropup:hover .dropbtn {
+    background-color: #2980B9;
+  }
 /* Style the navigation menu */
 nav {
   -webkit-flex: 1;
@@ -69,3 +221,18 @@ nav {
     -webkit-flex-direction: column;
     flex-direction: column;
   }
+
+
+ 
+
+
+#footer	{	margin-top: 5px;
+           clear: both;
+           width: 100%;
+           height: 20px;
+           color: white;
+           text-align: center;
+   
+}
+
+}
