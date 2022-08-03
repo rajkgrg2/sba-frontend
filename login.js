@@ -15,7 +15,7 @@
     //     }  
     // }
   function mycontrol(){
-    var myElements = document.getElementById("form").elements;
+    var myElements = document.getElementById("form").elements; // don't use VAR ( leaky scope, )
     if(myElements != null ) {                                   // checking if elements is not null.
         
     for (var i = 0, element; element = myElements[i++];) {
@@ -30,4 +30,19 @@
     var btnsubmit = document.getElementById("login");
 
     btnsubmit.addEventListener("click",mycontrol);
+
+//   function mycontrol() {
+//     var email = document.getElementById("email").value;
+//     var password = document.getElementById("password").value;
+//     if (username == null || username == "") {
+//         alert("Please enter the email.");
+//         return false;
+//     }
+//     if (password == null || password == "") {
+//         alert("Please enter the password.");
+//         return false;
+//     }
+//     alert('Login successful');
+    
+// } 
   

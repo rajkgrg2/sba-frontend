@@ -1,18 +1,15 @@
 function myFunc(){
-    alert("You Clicked me");
- }
-//loop through all dropup buttons to show dropup contents.
- var dropup = document.getElementsByClassName("dropup-btn");
-var i;
 
-for (i = 0; i < dropup.length; i++) {
-  dropup[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var dropupContent = this.nextElementSibling;
-    if (dropupContent.style.display === "block") {
-      dropupContent.style.display = "none";
-    } else {
-      dropupContent.style.display = "block";
+
+    let city = document.getElementById("dropup");
+    let content=["Register","Sign in","Home", "Contact Us"];
+    let href=["../HTML/register.html", "../HTML/login.html", "../HTML/home.html", "../HTML/contact.html"]
+    for (i=0;i<content.length;i++){ 
+    
+let aTag = document.createElement('a');
+aTag.setAttribute('href',href[i]);
+aTag.textContent= content[i];
+city.appendChild(aTag);
     }
-  });
-}
+
+  }
